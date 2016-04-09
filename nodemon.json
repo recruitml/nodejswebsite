@@ -1,0 +1,25 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**",
+    "bower_components/**",
+    "src/web/**",
+    "web/**"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node index"
+  },
+
+  "events": {
+    "restart": "echo '\n'"
+  },
+
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "watch": ["views", "server", "js"],
+
+  "ext": "js json html css"
+}

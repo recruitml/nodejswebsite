@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <style> body { font: 16px Arial, Helvetica, sans-serif; color: #666; } </style>
+</head>
+
+<body>
+<table border='0' cellpadding='0' cellspacing='0'>
+
+  <tr>
+    <td style='padding-bottom:16px'>
+      <img src='{{MDP_SITE_PATH}}/images/logo-main.png' width='100' alt='RecruitML Logo'/>
+    </td>
+  </tr>
+
+  <tr>
+    <td>You have a new <b>{{type}}</b> form submission with the following details:</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td>
+      <table border='0' cellpadding='0' cellspacing='0'>
+
+        <tr><td width='80px'><b>Name</b>:</td>     <td>{{name}}</td>         </tr>
+        <tr><td>             <b>Company</b>:</td>  <td>{{company_name}}</td> </tr>
+        <tr><td>             <b>Phone</b>:</td>    <td>{{phone}}</td>        </tr>
+        <tr><td>             <b>Email</b>:</td>    <td>{{email}}</td>        </tr>
+        <tr><td>             <b>Describe</b>:</td> <td>{{describes}}</td>    </tr>
+        <tr><td valign='top'><b>Comments</b>:</td> <td>{{{message}}}</td>    </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

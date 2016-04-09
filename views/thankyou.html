@@ -1,0 +1,38 @@
+<html>
+	<head>
+		{{> head}}
+		<title>Thank You | RecruitML</title>
+	</head>
+
+<body>
+
+<header>
+  {{> header}}
+  <blockquote>
+    {{#if error}}
+      <h1>Error</h1>
+    {{else}}
+      <h1>Thank You</h1>
+    {{/if}}
+  </blockquote>
+</header>
+
+	<main>
+
+		<div class="content-block">
+      {{#if error}}
+        <p>{{error}}</p>
+      {{else}}
+        <p>Your message has been received. We will be in touch with you shortly.</p>
+      {{/if}}
+		</div>
+
+		<div class="cta">
+			<h4>Return to</h4>
+			<a href="/" class="button">Home Page</a>
+		</div>
+
+	</main>
+
+
+{{> footer}}
