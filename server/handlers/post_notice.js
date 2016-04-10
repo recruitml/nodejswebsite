@@ -11,17 +11,11 @@ function postNoticeHandler(req, res) {
   _.assign(form, { type:type })
 
   sendEmail(form)
-       .catch(function(err) {
+       .catch(err => {
          data.error  = err
          console.error(err)
        })
-       .finally(function(){
-         return res.view('thankyou', data)
-       })
-}
-
-function onError(err) {
-  console.error(x)
+       .finally(() => res.view('thankyou', data))
 }
 
 module.exports = postNoticeHandler
