@@ -5,7 +5,7 @@ const ROUTES  = require('./server/routes')
 const PLUGINS =[require('vision'), require('inert')]
 
 const server = new Hapi.Server()
-server.connection({ host:'localhost', port:3000 })
+server.connection({ host:'localhost', port:8080 })
 
 server.register(PLUGINS, (err) => {
 
