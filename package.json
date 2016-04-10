@@ -5,8 +5,9 @@
   "main"        : "index.js",
   "private"     :  true,
 
-  "scripts": {
-    "dev": "nodemon"
+  "scripts" : {
+    "dev"   : "nodemon",
+    "start" : "node index"
   },
 
   "author"  : "Ihor Halchevskyi",
