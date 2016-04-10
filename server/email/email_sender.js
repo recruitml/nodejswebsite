@@ -24,9 +24,12 @@ function buildEmailOptions(email) {
     html    : email.html
   }
 
+  console.log()
   console.log('Using opts for email:')
-  console.log(util.inspect(opts, false, null))
-
+  console.log(util.inspect(config.email, false, null))
+  console.log(util.inspect(opts,         false, null))
+  console.log()
+  
   return opts
 }
 
