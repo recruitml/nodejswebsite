@@ -3,7 +3,6 @@
 const CONFIG = {
   ENV                : 'PROD',
 //EMAIL ----------------------------------------------------------------------------------------------------
-  MDP_MAIL_SMTP      : '10.0.0.15',
   MDP_EMAIL_TO       : 'patrick@recruitml.com',
   MDP_EMAIL_FROM     : 'noreply@recruitml.com',
   email              : { host   : 'smtp.gmail.com',
