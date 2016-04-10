@@ -22,7 +22,17 @@ const CONFIG = {
 }
 
 // TODO: REMOVE!!!
-CONFIG.MDP_EMAIL_TO = 'syncat@gmail.com'
-CONFIG.email.auth   = { user:'MariahVux@gmail.com', pass:'z_83@6GHj(@*#' }
+CONFIG.MDP_EMAIL_FROM = 'Maria.Shlemkih@yahoo.com'
+CONFIG.MDP_EMAIL_TO   = 'syncat@gmail.com'
+CONFIG.email          =
+{
+  host : 'smtp.mail.yahoo.com',
+  port   :  465,
+  secure :  true,
+  auth: {
+    user: 'Maria.Shlemkih@yahoo.com',
+    pass: 'Hjd29.La$29'
+  }
+}
 
 module.exports = CONFIG
