@@ -14,7 +14,12 @@ const CONFIG = {
   MDP_SITE_PATH      : 'http://recruitml.mdpdev.ca',
 //CAPTCHA --------------------------------------------------------------------------------------------------
   CAPTCHA_SITE_KEY   : '6LeU_g4TAAAAAFtncCUAwfcxlCDdWwuRya57pFQs',
-  CAPTCHA_SECRET_KEY : '6LeU_g4TAAAAAAufHVwV0DZno4aaVjVhf4_q_nV_'
+  CAPTCHA_SECRET_KEY : '6LeU_g4TAAAAAAufHVwV0DZno4aaVjVhf4_q_nV_',
+//HAPI -----------------------------------------------------------------------------------------------------
+  HAPI: {
+    host             : 'localhost',
+    port             :  8080
+  }
 }
 
 // TODO: REMOVE!!!

@@ -3,9 +3,10 @@ const Hapi    = require('hapi')
 const Hoek    = require('hoek')
 const ROUTES  = require('./server/routes')
 const PLUGINS =[require('vision'), require('inert')]
+const CONFIG  = require('./server/config/config')
 
 const server = new Hapi.Server()
-server.connection({ host:'localhost', port:8080 })
+server.connection({ host:CONFIG.HAPI.host, port:CONFIG.HAPI.port })
 
 server.register(PLUGINS, (err) => {
 
@@ -24,14 +25,3 @@ server.route(ROUTES)
 server.start(function() {
   console.log('Server started at: ' + server.info.uri)
 })
-
-//server.views({
-//  engines: {
-//    html: require('handlebars')
-//  },
-//  path: 'views',
-//  layoutPath: 'views/layout',
-//  layout: 'default',
-//  partialsPath: 'views/partials'
-//  //helpersPath: 'views/helpers',
-//})

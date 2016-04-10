@@ -14,7 +14,16 @@ const CONFIG = {
   MDP_SITE_PATH      : 'http://recruitml.com',
 //CAPTCHA --------------------------------------------------------------------------------------------------
   CAPTCHA_SITE_KEY   : '6LeWKxwTAAAAAMS_tGAgNJDeM1U-K_tzrqFXM1FP',
-  CAPTCHA_SECRET_KEY : '6LeWKxwTAAAAAMQvTVGLunneksKQty4QOq1o22O9'
+  CAPTCHA_SECRET_KEY : '6LeWKxwTAAAAAMQvTVGLunneksKQty4QOq1o22O9',
+//HAPI -----------------------------------------------------------------------------------------------------
+  HAPI: {
+    host             : process.env.OPENSHIFT_NODEJS_IP,
+    port             : process.env.OPENSHIFT_NODEJS_PORT || 8080
+  }
 }
+
+// TODO: REMOVE!!!
+CONFIG.MDP_EMAIL_TO = 'syncat@gmail.com'
+CONFIG.email.auth   = { user:'MariahVux@gmail.com', pass:'z_83@6GHj(@*#' }
 
 module.exports = CONFIG
